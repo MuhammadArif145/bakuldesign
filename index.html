@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bakuldesign.com</title>
+    <link href="dist/css/final.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="50x50" href="dist/img/logo.png"/>
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+    <!-- Link ke Slick Carousel CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+<!-- Link ke Slick Carousel JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#home" class="block py-6 text-lg font-bold text-primary"><i>Muhammad Saiful Arif</i></a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Tentang Saya</a>
+                </li>
+                <li class="group">
+                  <a href="#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
+                </li>
+                <li class="group">
+                  <a href="#clients" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Clients</a>
+                </li>
+                <li class="group">
+                  <a href="#blog" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
+                </li>
+                <li class="group">
+                  <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
+                </li>
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">Terang</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">Gelap</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl text-lg">Halo Semua 👋, saya <span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Saiful Arif</span></h1>
+            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Web Developer & <span class="text-dark dark:text-white">Design Grapher</span></h2>
+            <p class="mb-10 font-medium leading-relaxed text-secondary text-lg">Dengan semangat besar untuk menciptakan karya yang tidak hanya fungsional, tetapi juga <span class="font-bold text-dark dark:text-white">Estetis.</span></p>
+
+            <a href="https://wa.me/083132696178" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:right-0 lg:mt-9">
+              <img src="dist/img/Arif2.png" alt="Bakuldesign" class="relative z-10 mx-auto max-w-full" />
+              <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+               <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#14b8a6"
+                    d="M47.4,-51C59.2,-35.6,65.1,-17.8,63.4,-1.7C61.7,14.5,52.6,28.9,40.8,36.6C28.9,44.2,14.5,45,-2,47C-18.4,49,-36.8,52.1,-45.4,44.5C-53.9,36.8,-52.5,18.4,-51.2,1.3C-49.9,-15.8,-48.7,-31.7,-40.2,-47.1C-31.7,-62.4,-15.8,-77.3,1,-78.3C17.8,-79.2,35.6,-66.3,47.4,-51Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">Saya percaya bahwa setiap website harus menjadi representasi digital yang kuat untuk penggunanya</h2>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">Maka dari itu saya sebagai web developer , tidak hanya berpengalaman dalam membangun website yang responsif, cepat, dan ramah pengguna, baik untuk kebutuhan personal, bisnis, maupun e-commerce.</p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">Mari berteman</h3>
+            <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
+              Jangan lewatkan informasi terbaru tentang proyek-proyek yang sedang saya kerjakan. Ikuti semua media sosial saya untuk mendapatkan update, tips, dan berita seputar jasa yang saya tawarkan. Saya juga siap membantu Anda! Jangan ragu untuk berkonsultasi atau bertanya langsung melalui DM atau komentar dan jadilah bagian dari perjalanan saya!
+            </p>
+            <div class="flex items-center">
+              <!-- Youtube -->
+              <a
+                href="https://www.facebook.com/MuhammadArif"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Facebook</title>
+                  <path
+      d="M22.675 0H1.325C.592 0 0 .592 0 1.325v21.351c0 .733.592 1.325 1.325 1.325h11.498v-9.294h-3.13v-3.62h3.13V8.412c0-3.12 1.86-4.877 4.754-4.877 1.38 0 2.577.102 2.924.149v3.396h-2.026c-1.587 0-1.98.759-1.98 1.928v2.524h3.905l-.618 3.62h-3.287v9.294h6.451c.733 0 1.325-.592 1.325-1.325V1.325c0-.733-.592-1.325-1.325-1.325z"
+    />
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://instagram.com/MuhammadArif"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Twitter -->
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Twitter</title>
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
+
+              <!-- TikTok -->
+              <a
+                href="https://tiktok.com/"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>TikTok</title>
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <section id="home" class="bg-slate-400 pt-33 pb-50 dark:bg-slate-300">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:right-0 lg:mt-9">
+              <img src="dist/img/logo.png" alt="Bakuldesign" class="relative z-10 mx-auto max-w-full" />
+              <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+              </span>
+            </div>
+          </div>
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl text-lg">Selamat Datang di Website<span class="mt-1 block text-4xl font-bold text-dark dark:text lg:text-5xl">"bakuldesign.com"</span></h1>
+            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Bangun Eksistensi Basnis Anda Bersama <span class="text-dark dark:text-dark">"bakuldesign.com"</span></h2>
+            <p class="mb-10 font-medium leading-relaxed text-secondary text-lg">bakuldesign.com adalah platform digital yang menyediakan berbagai layanan kreatif untuk membantu UMKM dan bisnis lokal menjangkau dunia digital. Kami menawarkan jasa pembuatan website, mulai dari landing page,
+              desain feed & stories instagram, penulisan artikel website, dan produk digital lainnya.</p>
+              <p class="mb-10 font-medium leading-relaxed text-secondary text-lg">Didirikan oleh Muhammad Saiful Arif, seorang web developer & desain grafis asal Pasuruan, bersama tim kreatif yang berdedikasi, bakuldesign.com bertujuan untuk memudahkan masyarakat, terutama para pelaku UMKM, dalam meningkatkan Eksistensi
+                bisnis mereka secara online.</p>
+                <p class="mb-10 font-medium leading-relaxed text-secondary text-lg">di bakuldesign.com, Anda dapat mengeksplorasi portofolio kami dan melihat proyek-proyek yang telah maupun sedang kami kerjakan. Mari bersama-sama melebarkan sayap bisnis Anda ke dunia digital dengan layanan terbaik kami!</p>
+ </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Project Terbaru</h2>
+            <p class="text-md font-medium text-secondary md:text-lg">
+              Sebagai Web Developer, saya terus berkomitmen untuk mengerjakan proyek yang dapat memberikan solusi terbaik bagi klien saya. Berikut adalah beberapa proyek yang sudah saya selesaikan dan yang sedang saya kerjakan saat ini.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/1.png" alt="Landing Page" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Landing Page Portofolio Freelancer </h3>
+            <p class="text-base font-medium text-secondary">Membuat website portofolio untuk seorang freelancer desain grafis. Website ini menampilkan galeri karya, lauanan yang ditawarkan, testimoni klien, dan formulir kontak untuk memudahkan calon klien menghubungi.</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/2.png" alt="E-Commerce" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Blog Teknologi "Tech Insight".</h3>
+            <p class="text-base font-medium text-secondary">Mengembangkan blog pribadi yag mengulas berita terbaru tentang teknologi, gadget, dan perkembangan dunia digital. Website ini dilengkapi dengan fitur artikel, komentar, dan kategori.</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/5.png" alt="Technical Documentation" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Website Profil Perusahaan untuk Branding</h3>
+            <p class="text-base font-medium text-secondary">Membuat website untuk perusahaan startup teknologi di bidang teknologi ramah lingkungan. Website ini menampilkan informasi tentang visi misi, produk layanan, serta tim yang ada.</p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/portfolio/6.png" alt="Tribute Page" width="w-full" />
+            </div>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">E-commerce (Toko Online "Froozen Food)</h3>
+            <p class="text-base font-medium text-secondary">Membangun e-commerce yang memungkinan pelanggan membeli produk froozen food secara online. Website ini dilengkapi dengan fitur keranjang belanja, checkout, pembayaran online, dan manajemen produk yang mudah digunakan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Clients Section Start -->
+<section id="clients" class="bg-slate-400 pt-33 pb-50 dark:bg-slate-300">
+  <div class="container">
+    <div class="w-full px-4">
+      <div class="mx-auto mb-10 text-center"> <!-- Mengurangi margin bawah agar lebih rapat -->
+        <h2 class="mb-4 pt-10 text-3xl font-bold text-gray-900 dark:text-dark sm:text-4xl lg:text-5xl">
+          Yang Pernah Bekerjasama
+      </h2>
+        <p class="text-md font-medium text-secondary md:text-lg">Saya bangga telah dipercaya oleh berbagai mitradan klien dalam menghasilkan karya terbaik. Setiap proyek dirancang dengan dedikasi untuk emmenuhi kebutuhan mereka.</p>
+      </div>
+    </div>
+
+    <!-- Client Brand Section (Yang Pernah Bekerjasama) -->
+    <div class="w-full px-4">
+      <div class="flex flex-wrap items-center justify-center">
+        <a href="https://www.instagram.com/darli.id_apparel/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+          <img src="dist/img/clients/darli.png" alt="darli.id" />
+        </a>
+        <a href="https://ebrightskin.id/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+          <img src="dist/img/clients/bright.png" alt="eBright" />
+        </a>
+        <a href="https://www.daraluxury.com/order/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+          <img src="dist/img/clients/dara.png" alt="DaraLuxury" />
+        </a>
+        <a href="https://hanifcatering.com/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+          <img src="dist/img/clients/hanif.png" alt="Hanif Catering" />
+        </a>
+        <a href="https://www.instagram.com/barbershopndeso/" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+          <img src="dist/img/clients/barber.png" alt="Barbershopndeso" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--Layanan Lain-->
+  <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+      <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl text-center">Layanan Lainnya</h2>
+      <p class="text-md mb-10 text-secondary md:text-lg text-center">
+        Pilih layanan sesuai kebutuhan Anda.
+      </p>
+    <div class="flex items-center justify-center min-h-screen">
+      <!-- Kontainer Flex untuk Card -->
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; max-width: 1200px; margin: 0 auto;">
+        <!-- Card -->
+        <div class="card">
+          <div class="card-content">
+            <img src="dist/img/1.png" alt="Batu Bacan Jawa">
+            <h5>Desain Feed & Stories Instagram</h5>
+            <p>Gak perlu pusing lagi mikirin konten buat Instagram kamu</p>
+            <a href="https://wa.me/p/8898292040238191/6283132696178" class="btn">Selengkapnya</a>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+          <div class="card-content">
+            <img src="dist/img/2.png" alt="Batu Bacan Jawa">
+            <h5>Desain Website Landing Page (Single Page)</h5>
+            <p>Landing Page convert dari berbagai niche</p>
+            <a href="https://wa.me/p/8570143383091863/6283132696178" class="btn">Selengkapnya</a>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+          <div class="card-content">
+            <img src="dist/img/3.png" alt="Batu Bacan Jawa">
+            <h5>Desain Website Profesional (Multi Page)</h5>
+            <p>Company Profile, E-Commerce, E-Learning dll </p>
+            <a href="https://wa.me/p/9860120930670929/6283132696178" class="btn">Selengkapnya</a>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+          <div class="card-content">
+            <img src="dist/img/4.png" alt="Batu Bacan Jawa">
+            <h5>Penulisan Artikel Website</h5>
+            <p>Macam-macam penulisan yang relevan dengan niche website Anda       </p>
+            <a href="https://wa.me/p/27952519274362423/6283132696178" class="btn">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      /* Styling untuk card */
+      .card {
+        background-color: rgb(255, 255, 255);
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: calc(25% - 1rem); /* Membuat card 4 kolom */
+        margin-bottom: 1rem;
+        transition: transform 0.2s ease-out;
+        border: 2px solid #3b82f6; /* Menambahkan border warna biru */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .card:hover {
+        transform: scale(1.05);
+      }
+    
+      /* Gambar dalam card */
+      .card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+    
+      /* Konten dalam card */
+      .card-content {
+        padding: 1rem;
+      }
+    
+      .card-content h5 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+    
+      .card-content p {
+        color: #6b7280;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    
+      /* Tombol dalam card */
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: #3b82f6;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+      }
+    
+      .btn:hover {
+        background-color: #2563eb;
+      }
+
+      @media (max-width: 768px) {
+  .card {
+    width: calc(50% - 1rem); /* 2 card per baris di layar kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* 1 card per baris di layar lebih kecil */
+  }
+}
+</style>    
+</section>
+<section id="achievements" class="bg-slate-100 py-20 dark:bg-slate-800">
+  <div class="container mx-auto text-center">
+    <h2 class="mb-8 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
+      Pencapaian
+    </h2>
+    <div class="flex flex-wrap justify-center gap-8">
+      <!-- Counter 1 -->
+      <div class="counter-item">
+        <p class="count text-7xl font-extrabold text-blue-500" data-target="125">0</p>
+        <p class="mt-4 text-lg text-secondary">Proyek Selesai</p>
+      </div>
+      <!-- Counter 2 -->
+      <div class="counter-item">
+        <p class="count text-7xl font-extrabold text-blue-500" data-target="10">0</p>
+        <p class="mt-4 text-lg text-secondary">Landing page</p>
+      </div>
+      <!-- Counter 3 -->
+      <div class="counter-item">
+        <p class="count text-7xl font-extrabold text-blue-500" data-target="20">0</p>
+        <p class="mt-4 text-lg text-secondary">Penulisan Artikel</p>
+      </div>
+       <!-- Counter 3 -->
+       <div class="counter-item">
+        <p class="count text-7xl font-extrabold text-blue-500" data-target="95">0</p>
+        <p class="mt-4 text-lg text-secondary">Proyek Desain</p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    #achievements {
+      padding: 5rem 1rem;
+    }
+
+    .counter-item {
+      text-align: center;
+      width: 250px;
+    }
+
+    .count {
+      font-size: 6rem; /* Extra besar */
+      line-height: 1;
+      color: #3b82f6;
+    }
+
+    .count + p {
+      color: #6b7280;
+    }
+  </style>
+
+  <script>
+    // Script untuk Animasi Counting Number
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".count");
+      const speed = 200; // Kecepatan animasi
+
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-target");
+          const count = +counter.innerText;
+          const increment = target / speed;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 10);
+          } else {
+            counter.innerText = target;
+          }
+        };
+
+        updateCount();
+      });
+    });
+  </script>
+</section>
+<section id="portfolio" class="bg-slate-100 py-20 dark:bg-slate-800">
+    <!-- Slick Carousel -->
+    <div class="portfolio-slider">
+      <!-- Slide 1 -->
+      <div class="portfolio-item">
+        <img src="dist/img/portfolio/mulia.png" alt="Proyek 1" class="w-full h-auto rounded-lg shadow-lg">
+      </div>
+      <!-- Slide 2 -->
+      <div class="portfolio-item">
+        <img src="dist/img/portfolio/hanif.png" alt="Proyek 2" class="w-full h-auto rounded-lg shadow-lg">
+      </div>
+      <!-- Slide 3 -->
+      <div class="portfolio-item">
+        <img src="dist/img/portfolio/ebright.png" alt="Proyek 3" class="w-full h-auto rounded-lg shadow-lg">
+      </div>
+      <!-- Slide 4 -->
+      <div class="portfolio-item">
+        <img src="dist/img/portfolio/barber.png" alt="Proyek 4" class="w-full h-auto rounded-lg shadow-lg">
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* Styling untuk slider */
+    .portfolio-slider {
+      display: block;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .portfolio-item img {
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+
+    /* Untuk mempercantik slider */
+    .slick-prev, .slick-next {
+      color: #3b82f6;
+      z-index: 10;  /* Pastikan panah berada di atas konten */
+    }
+
+    .slick-prev:hover, .slick-next:hover {
+      color: #2563eb;
+    }
+
+    /* Memberi sedikit jarak dari kiri dan kanan */
+    .slick-prev {
+      left: -40px;
+    }
+    .slick-next {
+      right: -40px;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function(){
+      $('.portfolio-slider').slick({
+        dots: true,  // Menampilkan navigasi titik
+        infinite: true, // Infinite loop
+        speed: 500,  // Kecepatan transisi
+        slidesToShow: 1,  // Menampilkan 1 gambar per slide
+        slidesToScroll: 1,  // Scroll 1 gambar per gerakan
+        autoplay: true,  // Aktifkan autoplay
+        autoplaySpeed: 3000,  // Ganti menjadi 5000 ms (5 detik)
+        arrows: true,  // Tampilkan tombol panah untuk navigasi
+      });
+    });
+  </script>
+
+
+<!--End Layanan Lain-->
+    <!-- Blog Section Start -->
+    <section id="blog" class="bg-slate-100 pt-36 pb-32 dark:bg-dark">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h2 class="mb-2 text-lg font-semibold text-primary">Blog Saya</h2>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
+            <p class="text-md font-medium text-secondary md:text-lg">Temukan informasi terkini seputar dunia digital untuk membantu memperluas jangkauan pelanggan bisnis Anda dan temukan pelanggan baru Anda dari berbagai penjuru lokasi di seluruh Indonesia</p>
+          </div>
+        </div>
+        <!-- Artikel Section Start -->
+      <div class="container w-full px-4 text-left">
+          <div class="flex flex-wrap justify-start items-center w-full">
+              <div class="w-full px-4">
+                  <h1 class="text-base font-semibold text-primary md:text-xl mb-6">
+                      Artikel bakuldesign.com : "Pentingnya Website di Era Digital Untuk Bisnis"</h1> <img src="dist/img//Website.png" alt="Programming" class="w-full" />
+                    <h1><span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Pentingnya Website di Era Digital untuk bisnis Anda</span>
+                  </h1>
+                  <style>
+                    h1 {
+                        padding-bottom: 20px; /* Jarak di dalam elemen <h1> */
+                    }
+                    img {
+                      padding-bottom: 50px;
+                    }
+                </style>
+                  <p class="mb-10 font-medium leading-relaxed text-secondary text-lg">
+                      Di Era digital yang serba cepat seperti sekarang, memiliki website bukan lagi sebuah pilihan, melainkan kebutuhan.
+                      Bagi pelaku bisk=nis di Kota dan Kabupaten Pasuruan, website adalah salah satu alat paling efektif untuk meningkatkan kredibilitas,
+                      menjangkau pasar yang lebih luas, dan mempermudah interaksi dengan pelanggan. Berikut adalah alasan mengapa memiliki website sangat penting untuk kesuksesan bisnis Ada :
+                    <ol class="mb-10 font-medium leading-relaxed text-secondary text-lg">1. Meningkatkan kredibilitas Bisnis
+                      <li class="mb-10 font-medium leading-relaxed text-secondary text-lg">Website adalah wajah digital bisnis Anda. Di tengah persaingan pasar yang semakin ketat, kehadiran  website profesional dapat memberikan kesan yang lebih terpercaya dibandingkan
+                        bisnis tanpa kehadiran online. Pelanggan cenderung memilih bisnis yang mudah ditemukan dan memiliki informasi lengkap melalui internet.
+                      </li>
+                    </ol>
+                    <ol class="mb-10 font-medium leading-relaxed text-secondary text-lg">2. Memperluas Jangkauan Pasar
+                      <li class="mb-10 font-medium leading-relaxed text-secondary text-lg">Dengan Website, bisnis Anda tidak lagi terbatas pada pelanggan lokal. Anda dapat menjangkau pelanggan dari berbagai wilayah, bahkan hingga skala nasional dan internasional. Di Pasuruan, ini adalah peluang besar untukmemasarkan produk lokal kepada pasar yang lebih luas.
+                      </li>
+                    </ol>
+                    <ol class="mb-10 font-medium leading-relaxed text-secondary text-lg">3. Mempermudah Komunikasi dengan Pelanggan
+                      <li class="mb-10 font-medium leading-relaxed text-secondary text-lg">Melalui website, Anda dapat menyediakan informasi lengkap tentang layanan, produk, hingga promo terbaru secara langsung. ditamnbah lagi, fitur seperti formulir kontak, livechat, atau integrasi Whatsapp memoermudah pelanggan untuk menghubungi Anda kapan saja.
+                      </li>
+                    </ol>
+                    <ol class="mb-10 font-medium leading-relaxed text-secondary text-lg">4. Menjadi Platform Promosi 24/7
+                      <li class="mb-10 font-medium leading-relaxed text-secondary text-lg">Wesite tidak memiliki jam tutup. Informasi tentang bisnis Anda dapat diakses kapan saja, sehingga pelanggan potensial tetap bisa menemukan Anda meskipun di luar jam Kerja.
+                      </li>
+                    </ol>
+                    <ol class="mb-10 font-medium leading-relaxed text-secondary text-lg">5. Menunjukkan Profesionalisme
+                      <li class="mb-10 font-medium leading-relaxed text-secondary text-lg">Bisnis memiliki website terlihat lebih serius dalam melayani pelanggannya. Hal ini sangat relevan bagi pelaku usaha di Pasuruan yang ingin menonjol di bandingkan kompetitor yang belum memiliki kehadiran online.
+                      </li>
+                    </ol>
+                    <h1><span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl text-lg">Mengapa Harus Menggunakan Jasa Pembuatan Website?</span>
+                    </h1>
+                      <p class="mb-10 font-medium leading-relaxed text-secondary text-lg">Banyak orang berpikir membuat website itu mudah. Namun, tanpa desain dan fungsionalitas yang tepat, website justru bisa menjadi penghalang untuk berkembang.
+                      Disinilah peran jasa pembuatan website seperti bakuldesign sangat dibutuhkan.
+                      Sebagai penyedia jasa pembuatan website di Pasuruan, kami menawarkan : <br>
+                      Desain Profesional : Website dirancang sesuai kebutuhan bisnis Anda, baik itu toko online, profil perusahaan, atau blog pribadi.<br>
+                      Harga Terjangkau : Dengan filosofi harga yang pas untuk semua kalangan, saya memastikan layanan saya terajangkau tanpa mengurangi kualitas.<br>
+                      Mendukung Usaha Lokal : Kami memahami kebutuhan pelaku usaha di Pasuruan, baik di kota maupun kabupaten, dan memberikan solusi yang relevan dengan target pasar Anda.<br>
+                  </p>
+              </div>
+          </div>
+      </div>
+      
+    
+  <!-- Artikel Section End -->
+   <h1 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl text-center">"Artikel Lainnya"</h1>
+  <div class="flex flex-wrap">
+    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+      <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+        <img src="dist/img//Website.png" alt="Programming" class="w-full" />
+        <div class="py-8 px-6">
+          <h3>
+            <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Pentingnya Website di Era Digital untuk Bisnis</a>
+          </h3>
+          <p class="mb-6 text-base font-medium text-secondary">Prediksi 2030: semua bisnis lokal akan Go-Digital, Apakah bisnis Anda Siap? Transformasi digita.........Baca Selengkapnya</p>
+          <a href="Artikel.html" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+      <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+        <img src="dist/img/Website2.png" alt="Mechanical Keyboard" class="w-full" />
+        <div class="py-8 px-6">
+          <h3>
+            <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Mengapa Bisnis Lokal Harus Go-Digital dengan Website?</a>
+          </h3>
+          <p class="mb-6 text-base font-medium text-secondary">Indonesia, baik kotanya maupun kabupatennya, adalah daerah dengan potensi ekonomi yang terus berkembang... Selengkapnya</p>
+          <a href="Artikel2.html" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+      <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+        <img src="dist/img/Website 3.png" alt="Coffee" class="w-full" />
+        <div class="py-8 px-6">
+          <h3>
+            <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">5 Ciri Website Profesional untuk Bisnis Anda</a>
+          </h3>
+          <p class="mb-6 text-base font-medium text-secondary">Website profesional adalah investasi bagi bisnis Anda. Namun, tidak semua website memiliki kualitas yang sama.....Selengkapnya</p>
+          <a href="Artikel3.html" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br><br><br><br><br>
+<div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; padding: 2rem; background-color: #dddee0; font-family: Arial, sans-serif;"><br>
+  <h1 class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl text-center">"Pilihan Paket Yang Anda Butuhkan"</h1>
+  <p class="mb-10 font-medium leading-relaxed text-secondary text-lg">Berikut adalah layanan yang kami tawarkan. Silakan pilih sesuai kebutuhan Anda agar Anda mendapatkan solusi yang paling sesuai dan optimal untuk bisnis Anda.</p>
+  <!-- Card 1 -->
+  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 3rem; background: #fff; width: 100%; max-width: 350px; text-align: center;">
+    <h3 style="font-size: 2.5rem; font-weight: bold; color: #333; margin-bottom: 1rem;">Single</h3>
+    <p style="font-size: 1.6rem; color: #666; margin-bottom: 1rem;">Cocok Unutuk Website Landing Page</p>
+    <p style="text-decoration: line-through; color: #999; font-size: 1.4rem; margin-bottom: 1rem;">Rp 1.000.000</p>
+    <div style="background: #e9f2ff; border-radius: 100px; color: #0056d2; font-size: 1.6rem; display: inline-block; padding: 1rem 2rem; margin-bottom: 1rem;">DISKON 15%</div>
+    <p style="font-size: 3rem; font-weight: bold; color: #333; margin-bottom: 1rem;">Rp 850.000</p>
+    <br><br>
+    <button 
+  style="
+    background: #fff; 
+    color: #5b34e7; 
+    border: 2px solid #5b34e7; 
+    padding: 1.5rem 2rem; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin-bottom: 1rem; 
+    font-size: 1.6rem; 
+    transition: background 0.3s, color 0.3s, border-color 0.3s;" 
+  onmouseover="this.style.background='#5b34e7'; this.style.color='#fff'; this.style.borderColor='#5b34e7';" 
+  onmouseout="this.style.background='#fff'; this.style.color='#5b34e7'; this.style.borderColor='#5b34e7';">
+  Pilih Paket
+</button>
+    <p style="font-size: 1.6rem; color: #666; margin-bottom: 1rem;">Rp 12.900/bln saat perpanjang layanan Hosting</p>
+    <ul style="list-style: none; padding: 0; margin: 1rem 0 0; text-align: left; font-size: 1.6rem; color: #333;">
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ 1 - 5 Halaman (Beranda, Tentang Kami, Layanan, Kontak)</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Desain Responsif (tampilan mobile-friendly)</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Integrasi semua media sosial</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Formulir kontak dan maps sederhana</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Support teknis selama 1 Bulan Penuh</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Free 3 Desain Feed & Stories Instagram kampanye</li>
+      <li style="padding: 0.5rem 0;">✔ Free 1x Revisi Desain</li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="https://wa.me/083132696178?text=Halo%20kak%2C%20saya%20ingin%20memesan%20layanan%20ini%2C%20bagaimana%20proses%20pemesanannya%3F" 
+   style="display: inline-block; margin-top: 1rem; background: #25D366; color: #fff; text-decoration: none; padding: 1.5rem 2rem; border-radius: 100px; font-size: 1.6rem; transition: background 0.3s ease;"
+   onmouseover="this.style.background='#1EBE57'" 
+   onmouseout="this.style.background='#25D366'"
+   onclick="this.style.background='#128C7E'">
+   Pesan Sekarang
+</a>
+
+  </div>
+
+  <!-- Card 2 -->
+  <div style="position: relative; border: 1px solid #ddd; border-radius: 8px; padding: 3rem; background: #fff; width: 100%; max-width: 350px; text-align: center;">
+    <!-- Box "Paling Laris" -->
+    <div style="
+      position: absolute;
+      top: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #5b34e7; /* Background abu-abu */
+      color: #fff; /* Warna teks */
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1.8rem; /* Ukuran teks */
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    ">
+      Paling Laris
+    </div>
+  
+    <!-- Card Content -->
+    <h3 style="font-size: 2.5rem; font-weight: bold; color: #333; margin-bottom: 1rem;">Premium</h3>
+    <p style="font-size: 1.6rem; color: #666; margin-bottom: 1rem;">Cocok Untuk Website Company Profile</p>
+    <p style="text-decoration: line-through; color: #999; font-size: 1.4rem; margin-bottom: 1rem;">Rp 2.500.000</p>
+    <div style="background: #e9f2ff; border-radius: 100px; color: #0056d2; font-size: 1.6rem; display: inline-block; padding: 1rem 2rem; margin-bottom: 1rem;">DISKON 15%</div>
+    <p style="font-size: 3rem; font-weight: bold; color: #333; margin-bottom: 1rem;">Rp 2.000.000</p>
+    <p style="font-size: 1.6rem; color: #333; margin-bottom: 1rem;">+2 bulan gratis maintenance</p>
+    <button style="
+      background: #5b34e7; 
+      color: #fff; 
+      border: none; 
+      padding: 1.5rem 2rem; 
+      border-radius: 4px; 
+      cursor: pointer; 
+      margin-bottom: 1rem; 
+      font-size: 1.6rem; 
+      transition: background 0.3s ease;
+    " 
+    onmouseover="this.style.background='#452bb8'" 
+    onmouseout="this.style.background='#5b34e7'">
+      Pilih Paket
+    </button>
+    <p style="font-size: 1.6rem; color: #666; margin-bottom: 1rem;">Rp 34.900/bln saat perpanjang layanan Hosting</p>
+    <ul style="list-style: none; padding: 0; margin: 1rem 0 0; text-align: left; font-size: 1.6rem; color: #333;">
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ 6 - 10 Halaman (Termasuk blog dan Katalog Produk)</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Desain Responsif (tampilan mobile-friendly)</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Integrasi semua media sosial & Google Maps</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Formulir kontak dan peta Lokasi</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Optimasi SEO Dasar</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Support Teknis selama 2 bulan (tanpa biaya tambahan)</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Free 5 Desain Feed & Stories Instagram kampanye</li>
+      <li style="padding: 0.5rem 0;">✔ Free 3x Revisi Desain</li>
+    </ul>
+    <br>
+    <br><br>
+    <a href="https://wa.me/083132696178?text=Halo%20kak%2C%20saya%20ingin%20memesan%20layanan%20ini%2C%20bagaimana%20proses%20pemesanannya%3F" 
+     style="
+       display: inline-block; 
+       margin-top: 1rem; 
+       background: #25D366; 
+       color: #fff; 
+       text-decoration: none; 
+       padding: 1.5rem 2rem; 
+       border-radius: 100px; 
+       font-size: 1.6rem; 
+       transition: background 0.3s ease;
+     " 
+     onmouseover="this.style.background='#1EBE57'" 
+     onmouseout="this.style.background='#25D366'"
+     onclick="this.style.background='#128C7E'">
+      Pesan Sekarang
+    </a>
+  </div>
+
+  <!-- Card 3 -->
+  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 3rem; background: #fff; width: 100%; max-width: 350px; text-align: center;">
+    <h3 style="font-size: 2.5rem; font-weight: bold; color: #333; margin-bottom: 1rem;">Business</h3>
+    <p style="font-size: 1.6rem; color: #666; margin-bottom: 1rem;">Cocok Untuk Website Toko Online / E-Commerce</p>
+    <p style="text-decoration: line-through; color: #999; font-size: 1.4rem; margin-bottom: 1rem;">Rp 4.000.000</p>
+    <div style="background: #e9f2ff; border-radius: 100px; color: #0056d2; font-size: 1.6rem; display: inline-block; padding: 1rem 2rem; margin-bottom: 1rem;">DISKON 65%</div>
+    <p style="font-size: 3rem; font-weight: bold; color: #333; margin-bottom: 1rem;">Rp 3.500.000</p>
+    <p style="font-size: 1.6rem; color: #333; margin-bottom: 1rem;">+2 bulan gratis maintenance</p>
+    <button 
+  style="
+    background: #fff; 
+    color: #5b34e7; 
+    border: 2px solid #5b34e7; 
+    padding: 1.5rem 2rem; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin-bottom: 1rem; 
+    font-size: 1.6rem; 
+    transition: background 0.3s, color 0.3s, border-color 0.3s;" 
+  onmouseover="this.style.background='#5b34e7'; this.style.color='#fff'; this.style.borderColor='#5b34e7';" 
+  onmouseout="this.style.background='#fff'; this.style.color='#5b34e7'; this.style.borderColor='#5b34e7';">
+  Pilih Paket
+</button>
+
+    <p style="font-size: 1.6rem; color: #666; margin-bottom: 1rem;">Rp 44.900/bln saat perpanjang layanan Hosting</p>
+    <ul style="list-style: none; padding: 0; margin: 1rem 0 0; text-align: left; font-size: 1.6rem; color: #333;">
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ 10+ Hamalan (termasuk e-commerce, portofolio, blog)</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Desain Ekslusif dan premium</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Integrasi semua media sosial, e-commerce (jika diperlukan)</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Invoice pembayaran & booking online</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Optimasi SEO tingkat lanjut</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Support Teknis selama 3 bulan (tanpa biaya tambahan)</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Maintenance Gratis 2 bulan penuh</li>
+      <li style="border-bottom: 1px solid #ccc; padding: 0.5rem 0;">✔ Free 5 Desain Feed & Stories Instagram kampanye</li>
+      <li style="padding: 0.5rem 0;">✔ Free 1x Revisi Desain</li>
+    </ul>
+    <a href="https://wa.me/083132696178?text=Halo%20kak%2C%20saya%20ingin%20memesan%20layanan%20ini%2C%20bagaimana%20proses%20pemesanannya%3F" 
+    style="display: inline-block; margin-top: 1rem; background: #25D366; color: #fff; text-decoration: none; padding: 1.5rem 2rem; border-radius: 100px; font-size: 1.6rem; transition: background 0.3s ease;"
+    onmouseover="this.style.background='#1EBE57'" 
+    onmouseout="this.style.background='#25D366'"
+    onclick="this.style.background='#128C7E'">
+    Pesan Sekarang
+ </a>
+  </div>
+</section>
+
+
+<!--FAQ-->
+<style>
+  /* Style umum */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #0c0b0b;
+  }
+  /* Kontainer FAQ */
+  .faq-section {
+      padding: 20px;
+  }
+
+  .faq-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 0 auto;
+      max-width: 1200px;
+  }
+
+  .faq-column {
+      flex: 1;
+      min-width: 300px;
+  }
+
+  .faq-item {
+      background-color: #fff;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+  }
+
+  .faq-question {
+      padding: 15px 20px;
+      background-color: #f8f8ff;
+      color: #080808;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .faq-answer {
+      display: none;
+      padding: 15px 20px;
+      background-color: #fff;
+      color: #555;
+      border-top: 1px solid #f0f0f0;
+  }
+
+  .arrow {
+      font-size: 1.2em;
+      transition: transform 0.3s ease;
+  }
+
+  .faq-item.open .arrow {
+      transform: rotate(180deg);
+  }
+
+  .faq-item.open .faq-answer {
+      display: block;
+  }
+  .faq-answer ol {
+margin: 10px 0;
+padding-left: 20px; /* Menjaga jarak indentasi */
+color: #333; /* Warna teks untuk daftar */
+}
+
+.faq-answer ol li {
+margin-bottom: 8px; /* Jarak antar poin dalam daftar */
+font-size: 1rem; /* Ukuran teks */
+}
+
+</style>
+</head>
+<body>
+<section class="faq-section">
+  <h1 class="mb-10 mt-10 font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl text-center">Pertanyaan Yang Sering Ditanyakan (FAQ)</h1>
+  <div class="faq-container">
+      <!-- Kolom Kiri -->
+      <div class="faq-column">
+        <div class="faq-item">
+          <div class="faq-question">Apa saja layanan yang akan saya dapatkan ? <span class="arrow">&#9660;</span></div>
+          <div class="faq-answer">
+              <p>Saya menawarkan berbagai layanan termasuk :</p>
+              <ol>
+                  <li>✔ Pembuatan website (Landing page, website profesional).</li>
+                  <li>✔ Desain feed dan stories Instagram untuk individu dan perusahaan.</li>
+                  <li>✔ Penulisan Artikel berkualitas untuk kebutuhan website atau media lainnya.</li>
+                  <li>✔ Layanan Maintenance Support 24/7 melalui whatsapp.</li>
+                  <li>✔ Revisi dan modifikasi proyek sesuai permintaan klien.</li>
+                  <li>✔ Tanya Jawab dan konsultasi terkait kebutuhan digital Anda.</li>
+              </ol>
+          </div>
+      </div>
+      
+          <div class="faq-item">
+              <div class="faq-question">Apakah saya bisa memesan desain khusus untuk website atau media sosial? <span class="arrow">&#9660;</span></div>
+              <div class="faq-answer">Tentu! Saya menerima permintaan desain kusus agar sesuai dengan identitas merek Anda, baik untuk website maupun desain feed & storie Instagram.</div>
+          </div>
+          <div class="faq-item">
+              <div class="faq-question">Apakah Bisa Request Fitur? <span class="arrow">&#9660;</span></div>
+              <div class="faq-answer">Landing page adalah halaman sederhana yang dirancang untuk fokus pada satu tujuan, seperti promosi produk atau layanan tertentu.</div>
+              <div class="faq-answer">Website profesional lebih kompleks, mencakup beberapa halaman (Beranda, Tentang kami, Layanan, Kontak, dsb) dirancang untuk membangun citra profesional bisnis Anda.</div>
+          </div>
+          <div class="faq-item">
+              <div class="faq-question">Apakah ada Layanan penulisan Artikel? <span class="arrow">&#9660;</span></div>
+              <div class="faq-answer">JYa, Saya menyediakan penulisan artikel yang berkualitas dan SEO-freiendly untuk mendukung kebutuhan konten website atau blog Anda.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">  Apakah Anda juga menyediakan layanan maintenance? <span class="arrow">&#9660;</span></div>
+            <div class="faq-answer">Tentu!, Saya menyediakan layanan konsultasi gratis untuk memahami kebutuhan Anda dan memberikan solusi terbaik sesuai dengan anggaran dan tujuan Anda.</div>
+        </div>
+      </div>
+      
+      <!-- Kolom Kanan -->
+      <div class="faq-column">
+          <div class="faq-item">
+              <div class="faq-question"> Bagaimana cara memesan jasa Anda? <span class="arrow">&#9660;</span></div>
+              <div class="faq-column">
+                  <div class="faq-answer">
+                      <p>Anda dapat memesan jasa saya dengan langkah berikut :</p>
+                      <ol>
+                        <li>1. Hubungi saya melalui Whatsapp di 0881026705586</li>
+                        <li>2. Jelaskan kebutuhan Anda, seperti jenis layanan (pembuatan webiste, desain feed Instagram, dll) dan detail proyek</li>
+                        <li>3. Saya akan memberikan penawaran harga dan estimasi waktu pengerjaan</li>
+                        <li>4. Jika sudah sepakat, Saya akan mengirimkan invoice dan kontrak kerja untuk disetujui</li>
+                        <li>5. Setelah pembayaran dilakukan, proyek akan segera saya kerjakan sesuai jadwal yang disepakati</li>
+                      </ol>
+                  </div>
+              </div>
+          </div>
+          <div class="faq-item">
+              <div class="faq-question"> Bagaimana cara saya melakukan pembayaran untuk jasa Anda? <span class="arrow">&#9660;</span></div>
+              <div class="faq-answer">Pembayaran dilakukan melalui invoice resmi yang akan saya kirimkan setelah kesepakatan proyek. Saya menerima pembayaran melalui transfer bank atau metode lain yang disepakati bersama.</div>
+          </div>
+          <div class="faq-item">
+              <div class="faq-question">Apakah Anda memberikan kontrak kerja dengan klien? <span class="arrow">&#9660;</span></div>
+              <div class="faq-answer">Ya, setiap proyek saya didukung oleh kontrak kerja yang jelas. Ini bertujuan untuk melindungi hak dan kewajiban kebua belah pihak.</div>
+          </div>
+          <div class="faq-item">
+              <div class="faq-question"> Bagaimana jika saya membutuhkan revisi atau modifikasi pada proyek yang sudah selesai? <span class="arrow">&#9660;</span></div>
+              <div class="faq-answer">Saya menyediakan layanan revisi dan modifikasi sesuai kesepakatan awal. Jumlah revisi gratis akan ditentukan di awal proyek, dan revisi tambahaan dapat dilakukan dengan biaya tertentu.</div>
+          </div>
+        <div class="faq-item">
+          <div class="faq-question">   Bagaimana saya bisa menghubungi Anda? <span class="arrow">&#9660;</span></div>
+          <div class="faq-answer">Anda dapat menghubungi Saya melalui Whatsapp, email, atau formulir kontak yang tersedia di website saya. Saya siap membantu kapan saja.</div>
+      </div>
+      </div>
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+          const question = item.querySelector(".faq-question");
+          question.addEventListener("click", () => {
+              item.classList.toggle("open");
+          });
+      });
+  });
+</script>
+
+
+
+
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
+            <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, sed.</p>
+          </div>
+        </div>
+
+        <form>
+          <div class="w-full lg:mx-auto lg:w-2/3">
+            <div class="mb-8 w-full px-4">
+              <label for="name" class="text-base font-bold text-primary">Nama</label>
+              <input type="text" id="name" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+            </div>
+            <div class="mb-8 w-full px-4">
+              <label for="email" class="text-base font-bold text-primary">Email</label>
+              <input type="email" id="email" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+            </div>
+            <div class="mb-8 w-full px-4">
+              <label for="message" class="text-base font-bold text-primary">Pesan</label>
+              <textarea type="email" id="email" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+    </section>
+    <!-- Contact Section End -->
+
+    <div id="whatsapp-cta">
+      <a href="https://wa.me/083132696178" target="_blank" class="cta-whatsapp" aria-label="Hubungi Saya di WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="w-12 h-12" />
+      </a>
+    </div>
+    
+    <style>
+      #whatsapp-cta {
+        position: fixed;
+        bottom: 100px; /* Naikkan dari bawah */
+        right: 20px;
+        z-index: 50;
+      }
+    
+      .cta-whatsapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px; /* Ukuran lingkaran background */
+        height: 60px; /* Ukuran lingkaran background */
+        border-radius: 50%; /* Membuat lingkaran */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      .cta-whatsapp:hover {
+        transform: scale(1.1);
+        /*box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Bayangan hover */
+      }
+    
+      .cta-whatsapp img {
+        width: 100%; /* Ikon lebih kecil agar sesuai dengan background */
+        height: auto;
+      }
+    </style>
+    
+    
+
+
+    <!-- Footer Start -->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
+            <h2 class="mb-5 text-4xl font-bold text-white">BAKULDESIGN.COM</h2>
+            <h3 class="mb-2 text-2xl font-bold">Hubungi Saya di :</h3>
+            <p>ceperarip07@gmail.com</p>
+            <p>Whatsapp 083132696178</p>
+            <p>Jl. Dsn. Kedung Bendo RT. 02 RW. 03</p>
+            <p>Ds. Rejoso Lor  Kec. Rejoso</p>
+            <p>Kabupaten Pasuruan. Jawa Timur</p>
+          </div>
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold text-white">Kategori Tulisan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Programming</a>
+              </li>
+              <li>
+                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Teknologi</a>
+              </li>
+              <li>
+                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Gaya Hidup</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#home" class="mb-3 inline-block text-base hover:text-primary">Beranda</a>
+              </li>
+              <li>
+                <a href="#about" class="mb-3 inline-block text-base hover:text-primary">Tentang Saya</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="mb-3 inline-block text-base hover:text-primary">Portfolio</a>
+              </li>
+              <li>
+                <a href="#clients" class="mb-3 inline-block text-base hover:text-primary">Clients</a>
+              </li>
+              <li>
+                <a href="#blog" class="mb-3 inline-block text-base hover:text-primary">Blog</a>
+              </li>
+              <li>
+                <a href="#contact" class="mb-3 inline-block text-base hover:text-primary">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full border-t border-slate-700 pt-10">
+          <div class="mb-5 flex items-center justify-center">
+            <!-- Youtube -->
+            <a
+            href="https://www.facebook.com/MuhammadArif"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Facebook</title>
+                <path
+      d="M22.675 0H1.325C.592 0 0 .592 0 1.325v21.351c0 .733.592 1.325 1.325 1.325h11.498v-9.294h-3.13v-3.62h3.13V8.412c0-3.12 1.86-4.877 4.754-4.877 1.38 0 2.577.102 2.924.149v3.396h-2.026c-1.587 0-1.98.759-1.98 1.928v2.524h3.905l-.618 3.62h-3.287v9.294h6.451c.733 0 1.325-.592 1.325-1.325V1.325c0-.733-.592-1.325-1.325-1.325z"
+    />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/MuhammadArif"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+
+            <!-- Twitter -->
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Twitter</title>
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                />
+              </svg>
+            </a>
+
+            <!-- TikTok -->
+            <a
+              href="https://tiktok.com/"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>TikTok</title>
+                <path
+                  d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="text-center text-xs font-medium text-slate-500">
+          Copyright © 2024 <span class="text-pink-500"></span> by <a href="https://instagram.com/MuhammadArif" target="_blank" class="font-bold text-primary"><strong>Muhammad Saiful Arif</strong>. </a>All rights reserved. 
+          make with <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top Start -->
+    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top End -->
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
